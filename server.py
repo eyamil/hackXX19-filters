@@ -1,5 +1,5 @@
-from BaseHTTPServer import BaseHTTPRequestHandler, HTTPServer
-import SocketServer as socketserver
+from http.server import BaseHTTPRequestHandler, HTTPServer
+import socketserver
 import os
 from io import BytesIO
 
@@ -26,7 +26,7 @@ class Handler(BaseHTTPRequestHandler):
         self.path = route(self.path)
         if os.path.isfile(self.path):
             f = open(self.path)
-            self.wfile.write(f.read())
+            self.wfile.write(bytes(f.read(), "utf-8"))
             f.close()
             return
         else:
@@ -37,6 +37,7 @@ class Handler(BaseHTTPRequestHandler):
 
     def do_POST(self):
         self.set_headers()
+        content_length = int()
 
 def run_server(server_class = HTTPServer, handler_class = Handler, port = DEFAULT_PORT):
     server_address = ("", port)
