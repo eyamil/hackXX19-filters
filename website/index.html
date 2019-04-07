@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html>
+    
+  <head>
+    <link href="http://s3.amazonaws.com/codecademy-content/courses/ltp/css/shift.css" rel="stylesheet">   
+    <link rel="stylesheet" href="http://s3.amazonaws.com/codecademy-content/courses/ltp/css/bootstrap.css">
+    <link rel="stylesheet" href="main.css">    
+  </head>
+
+  <body>
+    <div class="nav">
+      <div class="container">
+        <ul class ="pull-left">
+          <li><a href="#business-info">Business</a></li>
+          <li><a href="#author-info">Author</a></li>
+        </ul>
+        <ul class ="pull-right">
+          <li><a href="#use-info">How To Use</a></li>
+          <li><a href="#how-to-run">How To Run</a></li>
+          <li><a href="#bug-info">Bugs</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="jumbotron">
+      <div class="container">
+        <h1>Update Your Excel Automatically.</h1>
+        <p>Invented by a student at UCSD, CSE 11. Save your time by using this program!</p>
+        <a href="#">Click Here to Download</a>
+      </div>
+    </div> 
+    
+    <div class="function">
+      <div class="container">
+        <h2>What does it do?</h2>
+        <p>This program can work with Excel, updating your files automatically and saving your precious time.
+           For anyone who owns a shop and does not want to check the Minimum Advertised Price by yourself,
+           this program can help you.
+           Basically it will read from the mastery sheet, and update with the vendor sheet that you provide.
+           What you need to do is simply clicking several buttons.</p>
+        <div class="row">
+          <div class="col-md-4">
+            <div class="thumbnail">
+              <img src="https://www.enclout.com/assets/excel_2013-3e7309ea2dbd8944be164009d840feae.png">
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="thumbnail">
+              <img src="https://lh3.ggpht.com/GkNfqm17WFuzaIR87_oz690ErF63hL08Ngj73QtDxyWlCOF80d2gWd2GHrPLJJ-YmHYS=w300">
+            </div>  
+          </div>
+          <div class="col-md-4">
+            <div class="thumbnail">
+              <img src="https://blog.barracuda.com/wp-content/uploads/2015/07/java.png">
+            </div> 
+          </div>          
+        </div>
+    </div>
+
+    <div class="learn-more">
+	  <div class="container">
+		<div class ="row">
+	      <div class="col-md-4">
+            <a name="business-info"></a>
+		    <h3>Business Info</h3>
+			<p>The price of this product is only $20.48! 
+                Worth your trying.</p>
+            <p>We plan to earn $40,000 winthin 2016.</p>
+            <p>We are facing to consumers who need a auto-checking machine.</p>   
+			<p><a href="#">Click here to pay.</a></p>
+	      </div>
+		  <div class ="col-md-4">
+            <a name="author-info"></a>
+			<h3>Author</h3>
+			<p>Jiazhen Rong, a freshman at Warren College. Currently enrolling in UCSD CSE 11.</p>
+            <p>PID: A92069091</p>
+            <p>username: cs11wber</p>
+			<p><a href="#">Learn more about the author</a></p>
+		  </div>
+		  <div class ="col-md-4">
+            <a name="bug-info"></a>
+			<h3>Bugs</h3>
+			<p>Here are some situations that we will nor deal with:</p>
+            <p>1. When you select a file that is not .xlsx type;</p>
+            <p>2. You select a .xlsx file, but it is not related to this project;</p>
+            <p>3. You do not select 2 input files, or where to store the file, you just hit the "update" button;</p>
+            <p>4. They select an appropriate file, but there is no column for either SKU or MAP (e.g.
+vendorFail.xlsx).</p>
+			<p><a href="#">Learn more about what we are not dealing with</a></p>
+		  </div>         
+	    </div>
+	  </div>
+	</div>
+              
+    <div class="run">
+        <div class="row">
+          <div class="col-md-12">
+        <a name="how-to-run"></a>
+	    <h3>How to run it on the ieng6.ucsd.edu servers:</h3>
+        <p>Compile:</p>
+        <p>javac -cp "/home/linux/ieng6/cs11wv/public/HW9_libs/*:." showStage.java</p>
+        <p>Run:</p>
+        <p>java -cp "/home/linux/ieng6/cs11wv/public/HW9_libs/*:." showStage</p>
+          </div>
+        </div>
+    </div>
+
+    <div class="use">
+      <div class="container">
+        <a name="use-info"></a>
+        <h2>How how to use this program:</h2>
+        <div class="row">
+          <div class="col-md-4">
+            <div class="thumbnail">
+              <img src="1.png">
+            </div>
+            <p>1. Click on "Select..." button to upload mastery.xlsx</p> 
+          </div>
+          <div class="col-md-4">
+            <div class="thumbnail">
+              <img src="2.png">
+            </div>  
+            <p>2. Click on "Select..." button to upload vendor.xlsx</p>
+          </div>
+          <div class="col-md-4">
+            <div class="thumbnail">
+              <img src="3.png">
+            </div> 
+            <p>3. Click on "Save..." button to choose the directory that you want to store the generated files</p>
+          </div>  
+        </div>
+        
+        <div class="row">  
+          <div class="col-md-4">
+            <div class="thumbnail">
+              <img src="4.png">
+            </div>
+            <p>4. Choose the directory</p> 
+          </div>
+          <div class="col-md-4">
+            <div class="thumbnail">
+              <img src="5.png">
+            </div>  
+            <p>5. Click on "Run" button to generate up-dated mastery.xlsx</p>
+          </div>
+          <div class="col-md-4">
+            <div class="thumbnail">
+              <img src="6.png">
+            </div> 
+            <p>6. Successfully Generated!</p>
+          </div>                  
+        </div>
+    </div>    
+  </body>
+</html>
